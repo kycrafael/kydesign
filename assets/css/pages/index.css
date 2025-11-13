@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    color: black;
+}
+
+h1 {
+    font-size: 70px;
+    font-weight: 600;
+    max-width: 1200px;
+    text-align: center;
+    margin: 200px auto 100px;
+    line-height: 1.1;
+    
+}
+
+h1 span {
+  display: inline-block;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  padding: 0 4px;
+  border-radius: 4px;
+  cursor: default;
+}
+
+h1 span:hover {
+  color: #ff0000;
+  background-color: #0000005e;
+}
+
+
+p, li, a, span {
+    font-family: 'Inter', sans-serif;
+    color: #555555;
+}
+
+
+
+
+
+/*
+
+NAVBAR
+
+*/
+
+.navbar {
+    width: 290px;
+	  height: 35px;
+    padding: 10px 30px; 
+    margin: 90px auto 0;
+    border-radius: 30px;
+    background-color: #e8e5e480;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    list-style: none;
+    
+}
+
+.navbar a {
+    color: #000000;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 15px 10px;
+    
+    
+}
+
+.navbar :hover {
+    color: #ff0000;
+    transition: color 0.3s ease;
+    transform: scale(1.05);
+}
+
+
+.navbar2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  list-style: none;
+  margin: auto 100px;
+}
+
+.navbar2 .navb2 {
+  background-color: #e8e5e480;
+  border-radius: 110px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  outline: none;
+  border: none;
+}
+
+.navbar2 .navb2:hover {
+  transform: scale(1.05);
+  color: #ff0000;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*
+
+PRODUTOS
+
+*/
+
+.produtos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 100px;
+  padding: 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+  
+}
+
+.produto {
+  text-align: center;
+  margin-top: 300px;
+}
+
+.produto img {
+  width: 100%;
+  transition: transform 0.3s ease;
+
+}
+
+.produto img:hover {
+  transform: scale(1.05);
+}
+
+.produto h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 10px;
+  color: #000000;
+  font-family: 'Inter', sans-serif;
+}
+
+.produto p {
+  font-size: 20px;
+  color: #ff0000;
+  font-weight: 500;
+  margin-top: 5px;
+}
+
+
+.produtos2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 100px;
+  padding: 40px;
+  max-width: 1100px;
+   margin-top: 400px;
+  margin: 0 auto;
+  
+}
+
+.produto2 {
+  text-align: center;
+   margin-top: 300px;
+}
+
+.produto2 img {
+  width: 100%;
+  transition: transform 0.3s ease;
+
+}
+
+.produto2 img:hover {
+  transform: scale(1.05);
+}
+
+.produto2 h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 10px;
+  color: #000000;
+  font-family: 'Inter', sans-serif;
+}
+
+.produto2 p {
+  font-size: 20px;
+  color: #ff0000;
+  font-weight: 500;
+  margin-top: 5px;
+}
+
+
+/*
+
+CONTACT
+
+*/
+
+.contactinfo {
+  text-align: center;
+  margin-top: 300px;
+   font-size: 30px;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+.contactinfo h1 span {
+
+  color: #000000d2;
+}
+
+.contactinfo img {
+  width: 40px;
+  margin: 0 15px;
+  transition: transform 0.3s ease;
+}
+
+.contact-text {
+   max-width: 700px; /* controla a largura do texto */
+  margin: 100px auto;   /* centraliza o bloco */
+  font-size: 20px;
+  line-height: 1.9;
+  text-align: center; /* opcional, se quiser o texto centralizado */
+}
+
+/*
+
+DARK MODE
+
+*/
+
+
+body.dark-mode h1 span:hover {
+  color: #ff0000;
+  background-color: rgba(255, 255, 255, 0.274)
+}
+
+.dark-mode-toggle {
+  position: fixed;
+  top: 22px;
+  right: 80px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #f5f5f5;
+  padding: 8px 16px;
+  border-radius: 25px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dark-mode-toggle:hover {
+  background-color: #e0e0e0;
+  transform: scale(1.05);
+}
+
+.dark-mode-toggle i {
+  font-size: 22px;
+  color: #333;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.dark-mode-toggle span {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #000;
+  transition: color 0.3s ease;
+}
+
+body.dark-mode {
+  background-color: #111;
+  color: #fff;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+body.dark-mode .navbar {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode a {
+  color: #fff;
+}
+
+body.dark-mode .dark-mode-toggle {
+  background-color: #333;
+}
+
+body.dark-mode .dark-mode-toggle i {
+  color: #ffffff;
+  transform: rotate(-25deg);
+}
+
+body.dark-mode .dark-mode-toggle span {
+  color: #fff;
+}
+
+body.dark-mode .navbar2 .navb2 {
+  color: #ffffff;
+  background-color: #333;
+}
+
+body.dark-mode .navbar2 .navb2:hover {
+  color: #ff0000;
+}
+
+body.dark-mode h1 span {
+  color: #ffffffb6;
+}
+
+body.dark-mode .produto h3 {
+  color: #ffffff;
+}
+body.dark-mode .produto2 h3 {
+  color: #ffffff;
+}
+
+body.dark-mode .contactinfo img {
+  filter: invert(1);
+}
+
+body.dark-mode .contact-text p  {
+  color: #ffffffc2;
+}
+
+
+
+
+/*
+
+LOGO
+
+*/
+
+.logo {
+  position: fixed;
+  top: 900px;
+  left: 30px;
+  display: flex;
+  align-items: center;
+  font-size: 19px;
+  cursor: default;
+}
+
+.logo span {
+  font-size: 15px;
+  margin-left: 5px;
+  color: #ff0000;
+  transition: color 0.3s ease;
+}
+
